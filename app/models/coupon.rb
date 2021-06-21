@@ -1,4 +1,4 @@
-class Coupon
+class Coupon < ActiveRecord::Base
 
   def count
   end

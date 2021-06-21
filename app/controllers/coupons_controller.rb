@@ -1,8 +1,5 @@
 class CouponsController < ApplicationController
 
-  def new
-  end
-
   def index
     @coupons = Coupon.all
   end
@@ -11,6 +8,8 @@ class CouponsController < ApplicationController
     @coupon = Coupon.find(params[:id])
   end
 
+  def new
+  end
   def create
     @coupon = Coupon.new
     @coupon.coupon_code = params[:coupon_code]
